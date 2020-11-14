@@ -1,0 +1,16 @@
+/* .Banner{
+    height:400px
+} */
+
+.Banner_Img,#Img{height:35vh;}
+
+
+
+@media only screen and (max-width:550px){
+    #Img{
+        
+        src:"https://laz-img-cdn.alicdn.com/images/ims-web/TB1X2RV2lr0gK0jSZFnXXbRRXXa.jpg_1200x1200.jpg"
+    }
+     
+ } 
+ 
