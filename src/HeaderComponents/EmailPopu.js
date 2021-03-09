@@ -6,6 +6,7 @@ import Fade from '@material-ui/core/Fade';
 import {useDispatch} from "react-redux"
 import "./Header.css"
 import {RegisterUser} from "../ACTIONS/Action"
+import "../PopupLogin.css"
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -65,8 +66,8 @@ console.log( SIGNUPUSERDATA,"kkin")
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
+        <Fade in={open} id="fade">
+          <div className={classes.paper} id="popup_main">
                  <div className="d-flex justify-content-center align-items-center py-3">
                  <svg width="48px" height="68px" viewBox="0 0 1024 1024" data-aut-id="icon"
          className="" fillRule="evenodd">
@@ -78,7 +79,7 @@ console.log( SIGNUPUSERDATA,"kkin")
            <div>
 
                <h3 className="py-3" style={{textAlign:'center'}}>SignUp With Email </h3>
-               <form onSubmit={SignUpUserInformation}>
+               <form id="registerform" onSubmit={SignUpUserInformation}>
                <input className="registerform" placeholder="EMAIL" value={Email} onChange={(e)=>SetEmail(e.target.value)}></input>
                <input className="registerform" placeholder="Password" value={Password} onChange={(e)=>SetPassword(e.target.value)}></input>
                <button className="registerform" >SIGN UP</button>

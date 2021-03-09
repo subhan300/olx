@@ -1,7 +1,7 @@
 import { Card } from '@material-ui/core'
 import React,{useEffect} from 'react'
 import Attributes from "./Attributes"
-
+import "./PostAds.css"
 import {Link} from "react-router-dom"
 function PostAds() {
 
@@ -34,13 +34,13 @@ function PostAds() {
    <div style={{display:"flex",justifyContent:"center",padding:'18px'}}><h1>Post Your Ads</h1></div>
 
 
-   <div className="main_cards">
-   <div className="card" id="post_cards">
+   <div className="main_cards" >
+   <div className="card d-flex justify-content-center align-items-center" id="post_cards" style={{border:"2px solid green"}}>
    <div className="cardTitle" style={{textAlign:"left",marginLeft:"15px",padding:"12px"}}>CHOOSE A CATEGORY</div>
-  <div className="card-body" id="post_cards_body">
-        <div className="main_cards_2">
-         <div className="card" id="cards_inside">
-             <div className="card-body" id="cards_inside_body">Mobiles
+  <div  id="post_cards_body" >
+        <div className="main_cards_2"  >
+         <div className="card" id="cards_inside" >
+             <div id="cards_inside_body">Mobiles
               <span>
 
             

@@ -32,7 +32,7 @@ useEffect( () => {
            
             <div className="row py-4 my-4">
 
-            {User_Data.map((v)=>{return(       <div className=" col-12    col-sm-3 py-4 my-3">
+            {User_Data.map((v)=>{return(       <div className=" col-12    col-sm-6 col-md-4 py-4 my-3">
 
 
 <div className="card">

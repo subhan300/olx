@@ -126,7 +126,7 @@ display: flex;justify-content: space-evenly;
   
 } */
 #cards_inside{
-    width:40%;margin:0px
+    width:100%;margin:0px;height:"200px"
 }
 
 #main_form_card{  display: flex;justify-content: center;}

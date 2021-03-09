@@ -6,18 +6,21 @@ import Fade from '@material-ui/core/Fade';
 import {useDispatch} from "react-redux"
 import "./HeaderComponents/Header.css"
 import {signin} from "./ACTIONS/Action"
+import "./PopupLogin.css"
 
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+ 
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+
   },
 }));
 
@@ -50,7 +53,7 @@ console.log( SIGNINUSERDATA,"kkin")
  
   return (
     <div>
-      <button type="button"  onClick={handleOpen} id="login">
+      <button type="button"  onClick={handleOpen} id="login" >
    LOGIN
       </button>
       <Modal
@@ -65,8 +68,8 @@ console.log( SIGNINUSERDATA,"kkin")
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
+        <Fade in={open} id="fade">
+          <div className={classes.paper} id="  ">
                  <div className="d-flex justify-content-center align-items-center py-3">
                  <svg width="48px" height="68px" viewBox="0 0 1024 1024" data-aut-id="icon"
          className="" fillRule="evenodd">
@@ -78,10 +81,10 @@ console.log( SIGNINUSERDATA,"kkin")
            <div>
 
                <h3 className="py-3" style={{textAlign:'center'}}>Signin With Email </h3>
-               <form onSubmit={SignInUserInformation}>
-               <input className="registerform" placeholder="EMAIL" value={Email} onChange={(e)=>SetEmail(e.target.value)}></input>
-               <input className="registerform" placeholder="Password" value={Password} onChange={(e)=>SetPassword(e.target.value)}></input>
-               <button className="registerform" >SIGN IN</button>
+               <form id="registerform" onSubmit={SignInUserInformation}>
+               <input   className="registerform" placeholder="EMAIL" value={Email} onChange={(e)=>SetEmail(e.target.value)}></input>
+               <input   className="registerform" placeholder="Password" value={Password} onChange={(e)=>SetPassword(e.target.value)}></input>
+               <button   className="registerform" >SIGN IN</button>
                </form>
            
               

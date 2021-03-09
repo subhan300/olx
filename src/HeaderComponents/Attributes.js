@@ -349,7 +349,7 @@ Tablets
 <div class="card-body ">
 <h5>UPLOAD UP TO 12 PHOTOS</h5>
 {/* main full sabka photogallery */}
-<div style={{display:"flex"}}>
+<div style={{display:"flex",flexWrap:"wrap"}}>
 
 
 {/* pori ek photo ka */}

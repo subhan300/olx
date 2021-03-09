@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 
 // import {UseValue} from "../PostReducer.js"
 import {useSelector} from "react-redux"
-import Header from "./Header.js"
+
+import Main from "./CopyHeader"
 // import {Link} from "react-router-dom"
 import "./Header.css"
 import "./Header.css"
@@ -20,19 +21,20 @@ function ProductItem(props) {
     return (
         <div>
     
-<Header  />
+<div style={{marginBottom:"40px"}}><Main   /></div>
 
 
         
 {/* yaha sa apka product item ai ga */}
 <div className="container py-4">
   <div className="row py-4">
-    <div className="py-4 col-8 ">
-    <div class="card">
-  <div class="card-body">
+    <div className="py-4 col-12 col-lg-8 ">
+    <div >
+  <div class="card card-body" style={{display:"flex",flexDirection:"column",marginBottom:"10px",alignItems:"center",
+ }}>
   <img src={l.src} class="img-fluid" alt="Responsive image"></img>
   </div>
-  <div class="card">
+  <div class="card" style={{marginTop:"10px"}}>
  
   <div class="card-body">
   <h4>Details</h4>
@@ -52,7 +54,7 @@ function ProductItem(props) {
 
 
 
-    <div className="col-4">
+    <div className="col-12 col-lg-4 ">
     {/* 1 card */}
         <div className="card py-4 m-4">
             

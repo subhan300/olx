@@ -1,0 +1,28 @@
+
+
+@media only screen and (max-width:600px) {
+    #fade,#popup_main {
+     width:320px;height:480px;font-size: smaller;
+     overflow: scroll;
+     text-align: center;
+    }
+  }
+
+
+
+  
+@media only screen and (max-width:600px) {
+    .registerform {
+     width:250px;height:40px;
+  font-size: 15px;
+     
+    }
+  }
+
+    
+@media only screen and (max-width:600px) {
+    #registerform {
+   
+  display: flex;justify-content: center;flex-direction: column;
+    }
+  }

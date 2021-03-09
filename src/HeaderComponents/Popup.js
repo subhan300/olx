@@ -7,6 +7,7 @@ import "./Header.css"
 import EmailPopu from "./EmailPopu"
 import {SignInWithGoogle} from "../index"
 import {useDispatch}  from "react-redux"
+import "../PopupLogin.css"
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -61,8 +62,8 @@ export default function TransitionsModal() {
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
+        <Fade in={open} id="fade">
+          <div className={classes.paper} id="popup_main">
                  <div className="d-flex justify-content-center align-items-center py-3">
                  <img style={{height:"130px"}}   src={"https://statics.olx.com.pk/external/base/img/loginEntryPointPost.webp"}></img>
                 
@@ -73,7 +74,7 @@ export default function TransitionsModal() {
                <div className="registerform" onClick={()=>alert("PLZ SIGNUP WITH EMAIL ONLY")}>Continue with Google</div>
            
                <div className="registerform"  onClick={()=>alert("PLZ SIGNUP WITH EMAIL ONLY")}>Continue With Twitter</div>
-               <div  > <EmailPopu/></div>
+               <div  className="registerform"> <EmailPopu/></div>
                <hr className="py-2"></hr>
                <p  style={{fontFamily:"bold",fontSize:"18px",textAlign:"center"}}>We won't share your personal details with anyone</p>
                <p style={{fontFamily:"bold",fontSize:"18px",textAlign:"center"}}> If you continue, you are accepting OLX Terms <br></br>and Conditions and Privacy Policy</p>
