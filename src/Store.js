@@ -11,3 +11,8 @@ import RootReducer from "./RootReducer"
     RootReducer,applyMiddleware(thunk)
 )
 export default store
+
+
+// [build]
+ 
+// command ="CI= npm run build"
